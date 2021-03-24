@@ -1,0 +1,131 @@
+*{box-sizing: border-box;}
+a{text-decoration: none;}
+ol,ul,li{list-style: none;}
+
+#header{position: fixed; width:100%; height:150px; z-index: 1;}
+#header .inner{position: relative; width:1460px; height:100%; margin: 0 auto;}
+#header .inner::after{content:''; display: block; clear: both;}
+
+#header .nav_wrap{position:relative; float: right; padding-right:105px;}
+#gnb>li{float:left; width:130px;}
+#gnb>li>a{display: block; text-align: center; font-size: 16px; color: #fff; line-height: 150px;}
+#gnb>li:hover>a{color: #0451ff;}
+
+#gnb .submenu{display: none; position: absolute; top:120px; width:180px; padding:10px 0; background: #fff; }
+#gnb .submenu>li{padding:10px 33px;}
+#gnb .submenu>li>a{display: block; font-size:13px; color:#000;}
+#gnb .submenu>li:hover>a{color: #0451ff;}
+
+/*----common-----------*/
+.content{width:100%; height:100vh; background:#000 url(../img/배경_02.png) no-repeat center; background-size: cover;}
+.content .inner{position: relative; width:1460px; height:100%; margin: 0 auto; z-index: 0;}
+.content .inner::after{content:''; display: none; clear: both;}
+
+.content .code{position: absolute; right:0; bottom:20%; writing-mode:tb-rl;}
+.content .code>p{font-size:12px; color: #fff;}
+
+/*----home-----------*/
+#home{background-image: url(../img/배경.png);}
+#home .logo{position: absolute; top:200px; left:6%;}
+#home .logo .last{font-size:16px; font-weight: bold; color: #fff;}
+#home .logo .first{font-size:16px; font-weight: 100; color: #fff;}
+
+#home .main_msg{position: absolute; top:50%; left:23%; transform: translate(-50%, -50%);}
+#home .main_msg .main_txt{color: #fff; font-size:110px; font-weight: 500; line-height: 125px;}
+#home .main_msg .main_txt.blue{color: #0451ff;}
+
+#home .intro{position: absolute; bottom:14%; left:24%; width:100%;}
+#home .intro .title{display: inline-block; font-size:16px; font-weight: bold; color: #0451ff;}
+
+#home .intro .box_wrap{position: absolute; top:12%; width:90%; display: inline-block; margin-left:100px;}
+#home .intro .box{float:left; margin-right:10%}
+#home .intro .box:last-of-type{margin-right: 0;}
+
+#home .intro .box .txt{font-size:13px; line-height: 18px; font-weight: 100; color: #fff;}
+#home .intro .box .txt.bold{font-weight: bold;}
+
+/*----work-----------*/
+#work{overflow: hidden;}
+
+#work .swiper-button-prev{width:100px; top:620px; left:85%; transform: rotate(90deg);}
+#work .swiper-button-next{width:100px; top:700px; right: 8%; transform: rotate(90deg);}
+#work .swiper-button-prev:after{content:''; width:100px; height:100px;  background:no-repeat center url('../img/slide_l.png');}
+#work .swiper-button-next:after{content:''; width:100px; height:100px;  background:no-repeat center url('../img/slide_r.png');}
+
+#work .project{width:100%;}
+#work .project .inner::after{content:''; display: block; clear: both; }
+
+#work .project .msg{position:relative; top:170px; float:left; width:30%;}
+
+#work .swiper-slide .project .msg .info{opacity: 0;}
+#work .swiper-slide .project .msg .info .num{font-size: 30px; font-weight: bold; color: #fff; margin-bottom: 20px;}
+#work .swiper-slide .project .msg .info .name{font-size:45px; font-weight: bold; color: #fff; margin-bottom: 10px;}
+#work .swiper-slide .project .msg .info .renew{font-size:45px; font-weight: 100; color: #fff;}
+#work .swiper-slide .project .msg .desc{margin-top:70px;}
+#work .swiper-slide .project .msg .desc .desc_box{margin-bottom:50px;}
+#work .swiper-slide .project .msg .desc .desc_box.period{opacity: 0;}
+#work .swiper-slide .project .msg .desc .desc_box.product{opacity: 0;}
+#work .swiper-slide .project .msg .desc .desc_box.percent{opacity: 0;}
+#work .swiper-slide .project .msg .desc .desc_box .title{font-size:20px; font-weight: bold; color: #0451ff; margin-bottom: 20px;}
+#work .swiper-slide .project .msg .desc .desc_box .txt{font-size:14px; line-height: 20px; color: #999;}
+
+#work .swiper-slide-active .project .msg .info{opacity: 1; transition: 0.5s 0.3s;}
+#work .swiper-slide-active .project .msg .desc .desc_box.period{opacity: 1;  transition: 0.5s 0.6s;}
+#work .swiper-slide-active .project .msg .desc .desc_box.product{opacity: 1;  transition: 0.5s 0.9s;}
+#work .swiper-slide-active .project .msg .desc .desc_box.percent{opacity: 1;  transition: 0.5s 1.2s;}
+
+#work .project .site{position:relative; top:350px; left:-6%; float:left; width:70%;}
+
+#work .swiper-slide .project .site .pic{opacity: 0; transform: translateY(100px);}
+#work .swiper-slide-active .project .site .pic{opacity: 1; transform: translateY(0); transition: 0.5s 0.3s;}
+
+#work .project .site .btn_wrap{position: absolute; top:0; left:0; width:83%; height:100%; background: rgba(0,0,0,0); cursor: pointer; transition: 0.5s 0;}
+#work .project .site .btn_wrap .btn{
+    position: absolute; width:150px; height:40px; border-radius: 30px;
+    opacity: 0; transform: translate(-50%,0%); transition: 0.3s 0.1s;
+}
+#work .project .site .btn_wrap .btn>a{display: block; font-size:14px; color: #000; text-align: center; line-height: 40px;}
+#work .project .site .btn_wrap .btn.blue{top:40%; left:48%; background: #0451ff;}
+#work .project .site .btn_wrap .btn.blue>a{color: #fff;}
+#work .project .site .btn_wrap .btn.white{top:56%; left:48%; background: #fff;}
+
+#work .project .site .btn_wrap.on{background: rgba(0,0,0,0.7);}
+#work .project .site .btn_wrap.on .btn{opacity: 1; transform: translate(-50%,-50%);}
+
+
+/*----contact-----------*/
+#contact{background-image: url(../img/배경.png);}
+#contact .logo{position: absolute; top:200px; left:6%;}
+#contact .logo .last{font-size:16px; font-weight: bold; color: #fff;}
+#contact .logo .first{font-size:16px; font-weight: 100; color: #fff;}
+
+#contact .main_msg{position: absolute; top:50%; left:23%; transform: translate(-50%, -50%);}
+#contact .main_msg .main_txt{color: #fff; font-size:110px; font-weight: 500; line-height: 125px;}
+#contact .main_msg .more_wrap{margin:30px 0 0 10px;}
+#contact .main_msg .more{font-size:16px; color: #fff;}
+#contact .main_msg .btn{display: inline-block; width:100px; height:35px; margin: 0 10px; border-radius: 30px; background: #0451ff;}
+#contact .main_msg .btn>a{display: block; text-align: center; font-size:14px; line-height: 35px; color: #fff;}
+
+#contact .contact_info{position: absolute; bottom:14%; left:24%; width:100%;}
+
+#contact .contact_info .box_wrap{position: absolute; top:12%; width:90%; display: inline-block; margin-left:100px;}
+#contact .contact_info .box{float:left; margin-right:10%}
+#contact .contact_info .box:last-of-type{margin-right: 0;}
+
+#contact .contact_info .box .title{font-size:16px; font-weight: bold; color: #0451ff; margin-bottom: 20px;}
+#contact .contact_info .box .txt{font-size:14px; color: #fff;}
+#contact .contact_info .box .txt>a{color: #fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
