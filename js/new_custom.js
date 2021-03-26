@@ -10,10 +10,14 @@ $(function(){
 
 
     //work_swiper
-    const swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('#work .swiper-container', {
         direction: 'vertical',
-        
-      
+
+        mousewheel: {
+            forceToAxis: true,
+
+        },
+     
         pagination: {
           el: '.swiper-pagination',
         },
