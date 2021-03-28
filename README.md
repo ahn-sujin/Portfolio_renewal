@@ -1,6 +1,7 @@
 
 # Portfolio_renewal site
 This site is a newly renewed portfolio site.. (by ahn-sujin)
+[VIEW WEBSITE](https://ahn-sujin.github.io/Portfolio_renewal/work.html)
 
 ## About
 * 본 사이트는 개인 작업물을 모아놓은 포트폴리오 사이트입니다. 
