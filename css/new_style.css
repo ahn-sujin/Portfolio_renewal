@@ -231,7 +231,7 @@ ol,ul,li{list-style: none;}
     #work #home .logo{position: absolute; top:125px; left:0%;}
 
     #home_ani{width:300px; height:200px;}
-    #work .swiper-slide #home .main_msg{top:0%; left:0%; transform: translate(-4%, 117%);}
+    #work .swiper-slide #home .main_msg{top:0%; left:0%; transform: translate(-4%, 95%);}
     #work .swiper-slide #home .intro{transform: translate(0, -468px); }
     #work .swiper-slide #home .intro .box_wrap{margin-left:40px;}
     #work .swiper-slide #home .intro .box{width:100%;}
@@ -353,7 +353,7 @@ ol,ul,li{list-style: none;}
 @media screen and (max-width:480px){
     #work #contact .logo{position: absolute; top:125px; left:0%;}
 
-    #work .swiper-slide #contact .main_msg{top:0%; left:0%; transform: translate(0%, 100%);}
+    #work .swiper-slide #contact .main_msg{top:0%; left:0%; transform: translate(0%, 85%);}
     #work .swiper-slide #contact .main_msg .main_txt{font-size:60px; line-height: 75px;}
 
     #work .swiper-slide #contact .main_msg .more{display: block; font-size:13px; color: #fff; margin-bottom: 10px;}
