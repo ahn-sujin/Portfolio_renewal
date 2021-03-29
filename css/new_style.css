@@ -78,6 +78,13 @@ ol,ul,li{list-style: none;}
     .content .code{display: none;}
 }
 
+@media screen and (max-width:768px){
+    .content{padding:40px 40px;}
+    
+}
+
+
+
 /*----work-----------*/
 #work{overflow: hidden;}
 
