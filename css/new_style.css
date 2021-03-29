@@ -75,24 +75,7 @@ ol,ul,li{list-style: none;}
 @media screen and (max-width:1200px){
     .content{padding:0 40px;}
     .content .inner{width:100%;}
-    .content .code{bottom:33%;}
-    .content .code>p{font-size:10px; font-weight: 100;}
-}
-
-@media screen and (max-width:980px){
     .content .code{display: none;}
-}
-
-@media screen and (max-width:768px){
-    
-}
-
-@media screen and (max-width:640px){
-    .content{padding:0 20px;}
-}
-
-@media screen and (max-width:480px){
-    
 }
 
 /*----work-----------*/
@@ -169,8 +152,8 @@ ol,ul,li{list-style: none;}
 #work .swiper-slide-active #home .intro .box{opacity: 1; transform: translateY(0); transition: 0.5s 0.3s;} 
 
 @media screen and (max-width:1200px){
-    #work .swiper-button-prev{top:577px; left:85%;}
-    #work .swiper-button-next{top:650px; left:85%;}
+    #work .swiper-button-prev{top:577px; left:91%;}
+    #work .swiper-button-next{top:650px; left:91%;}
 
     #work #home .logo{top:170px; left:1%;}
     
@@ -194,27 +177,29 @@ ol,ul,li{list-style: none;}
 }
 
 @media screen and (max-width:768px){
-    #work .swiper-button-prev{top:553px;}
-    #work .swiper-button-next{top:625px;}
+    #work .swiper-button-prev{top:529px; left:88%;}
+    #work .swiper-button-next{top:584px; left:88%;}
+    #work .swiper-button-prev:after,
+    #work .swiper-button-next:after{width:40px; height:40px; border-radius: 100%;}
 
     #work #home .logo{position: absolute; top:215px; left:0%;}
 
     #home_ani{width:400px; height:300px;}
     #work .swiper-slide #home .main_msg{top:0%; left:0%; transform: translate(0%, 100%);}
-    #work .swiper-slide #home .intro{top:4%; left:0%; transform: translate(0, -195px); }
+    #work .swiper-slide #home .intro{top:4%; left:0%; transform: translate(0, -50px); }
     #work .swiper-slide #home .intro .box_wrap{margin-left:80px;}
     #work .swiper-slide #home .intro .box{margin-bottom: 20px;}   
 }
 
 @media screen and (max-width:640px){
-    #work .swiper-button-prev{width:80px; top:522px ;left:80%; }
-    #work .swiper-button-next{width:80px; top:601px ;left:80%; }
+    #work .swiper-button-prev{width:80px; top:522px ;left:88%; }
+    #work .swiper-button-next{width:80px; top:577px ;left:88%; }
 
     #work #home .logo{position: absolute; top:200px; left:0%;}
 
     #home_ani{width:350px; height:250px;}
     #work .swiper-slide #home .main_msg{top:0%; left:0%; transform: translate(0%, 129%);}
-    #work .swiper-slide #home .intro{transform: translate(0, -188px); }
+    #work .swiper-slide #home .intro{transform: translate(0, 50px); }
     #work .swiper-slide #home .intro .box_wrap{margin-left:60px;}
     #work .swiper-slide #home .intro .box{margin-bottom: 30px;}
     #work .swiper-slide #home .intro .box .txt{font-size:11px;}
@@ -222,8 +207,8 @@ ol,ul,li{list-style: none;}
 }
 
 @media screen and (max-width:480px){
-    #work .swiper-button-prev{width:80px; top:522px; left:80%; }
-    #work .swiper-button-next{width:80px; top:578px; left:80%; }
+    #work .swiper-button-prev{width:80px; top:679px; left:80%; }
+    #work .swiper-button-next{width:80px; top:732px; left:80%; }
     #work .swiper-button-prev:after,
     #work .swiper-button-next:after{width:40px; height:40px; border-radius: 100%;}
     
@@ -232,7 +217,7 @@ ol,ul,li{list-style: none;}
 
     #home_ani{width:300px; height:200px;}
     #work .swiper-slide #home .main_msg{top:0%; left:0%; transform: translate(-4%, 95%);}
-    #work .swiper-slide #home .intro{transform: translate(0, -468px); }
+    #work .swiper-slide #home .intro{top:8%; transform: translate(0, -436px); }
     #work .swiper-slide #home .intro .box_wrap{margin-left:40px;}
     #work .swiper-slide #home .intro .box{width:100%;}
     #work .swiper-slide #home .intro .box .txt{font-size:11px;}
@@ -276,18 +261,65 @@ ol,ul,li{list-style: none;}
 #work .project .site .btn_wrap.on .btn{opacity: 1; transform: translate(-50%,-50%);}
 
 @media screen and (max-width:1024px){
+    #work .swiper-slide .project .msg{top:170px; width:100%;}
+    #work .swiper-slide .project .msg .info{display: inline-block;}
+    #work .swiper-slide .project .msg .info .num{font-size: 25px;}
+    #work .swiper-slide .project .msg .info .name{font-size:40px;}
+    #work .swiper-slide .project .msg .info .renew{font-size:40px;}
+    #work .swiper-slide .project .msg .desc{display: inline-block; margin:100px 0 0 70px;}
+    #work .swiper-slide .project .msg .desc .desc_box{float:left; margin:0 40px 0px 0;}
+    #work .swiper-slide .project .msg .desc .desc_box .title{font-size:16px; margin-bottom: 10px;}
+    #work .swiper-slide .project .msg .desc .desc_box .txt{font-size:13px; line-height: 20px;}
 
+    #work .project .site .btn_wrap{width:90%;}
+
+    #work .project .site{position:relative; top:230px; left:0%; float:left; width:100%;}
 }
 
 @media screen and (max-width:768px){
-    
+    #work .swiper-slide .project .msg{top:170px; width:100%;}
+    #work .swiper-slide .project .msg .info .num{font-size: 20px;  margin-bottom:10px;}
+    #work .swiper-slide .project .msg .info .name{font-size:30px;}
+    #work .swiper-slide .project .msg .info .renew{font-size:30px;}
+    #work .swiper-slide .project .msg .desc{display: inline-block; margin:100px 0 0 50px;}
+    #work .swiper-slide .project .msg .desc .desc_box{float:left; margin:0 20px 0px 0;}
+    #work .swiper-slide .project .msg .desc .desc_box .title{font-size:16px; margin-bottom: 10px;}
+    #work .swiper-slide .project .msg .desc .desc_box .txt{font-size:12px; line-height: 20px;}
+
+    #work .project .site .btn_wrap{width:100%;}
+    #work .project .site .btn_wrap .btn{width:100px; height:30px;}
+    #work .project .site .btn_wrap .btn>a{font-size:12px; line-height: 30px;}
+
+    #work .project .site{position:relative; top:235px; left:0%; float:left; width:85%;}
+    #work .project .site img{width:100%;}
 }
 
 @media screen and (max-width:640px){
-    
+    #work .swiper-slide .project .msg .desc{margin:30px 0 0 0 ; width:100%;}
+    #work .swiper-slide .project .msg .desc .desc_box{float:right; margin:0 40px 0px 0;}
+    #work .swiper-slide .project .msg .desc .desc_box:nth-of-type(1){margin-right:0;}
+    #work .swiper-slide .project .msg .desc .desc_box .title{font-size:14px; margin-bottom: 10px;}
+    #work .swiper-slide .project .msg .desc .desc_box .txt{font-size:12px; line-height: 18px;}
+
+    #work .project .site{top:214px;}
 }
 
 @media screen and (max-width:480px){
+    #work .swiper-slide .project .msg{top:115px; width:100%;}
+    #work .swiper-slide .project .msg .info .num{font-size: 18px;  margin-bottom:10px;}
+    #work .swiper-slide .project .msg .info .name{font-size:20px;}
+    #work .swiper-slide .project .msg .info .renew{font-size:20px;}
+
+    #work .swiper-slide .project .msg .desc .desc_box{margin:0 20px 0px 0;}
+    #work .swiper-slide .project .msg .desc .desc_box .title{font-size:12px; margin-bottom: 10px;}
+    #work .swiper-slide .project .msg .desc .desc_box .txt{font-size:10px; line-height: 14px;}
+
+    #work .project .site .btn_wrap .btn{width:90px; height:25px;}
+    #work .project .site .btn_wrap .btn>a{font-size:10px; line-height: 25px;}
+    #work .project .site .btn_wrap .btn.blue{top:35%;}
+    #work .project .site .btn_wrap .btn.white{top:60%;}
+
+    #work .project .site{width:100%; top:160px;}
     
 }
 
@@ -331,7 +363,7 @@ ol,ul,li{list-style: none;}
 @media screen and (max-width:768px){
     #work #contact .logo{position: absolute; top:215px; left:0%;}
 
-    #work .swiper-slide #contact .contact_info{position: absolute; top:4%; left:10%; transform: translate(0, -142px);}
+    #work .swiper-slide #contact .contact_info{position: absolute; top:4%; left:10%; transform: translate(0, 12px);}
 }
 
 @media screen and (max-width:640px){
@@ -344,7 +376,7 @@ ol,ul,li{list-style: none;}
     #work .swiper-slide #contact .main_msg .btn{display: inline-block; width:100px; height:35px; margin: 0 10px;}
     #work .swiper-slide #contact .main_msg .btn>a{display: block; text-align: center; font-size:13px; line-height: 35px; color: #fff;}
 
-    #work .swiper-slide #contact .contact_info{position: absolute; top:4%; left:0%; transform: translate(0, -142px);}
+    #work .swiper-slide #contact .contact_info{position: absolute; top:4%; left:0%; transform: translate(0, 80px);}
     #work .swiper-slide #contact .contact_info .box .title{font-size:14px;}
     #work .swiper-slide #contact .contact_info .box .txt{font-size:13px;}
     
@@ -361,7 +393,7 @@ ol,ul,li{list-style: none;}
     #work .swiper-slide #contact .main_msg .btn>a{font-size:13px; line-height: 30px;}
     #work .swiper-slide #contact .main_msg .visit{display: inline-block;}
 
-    #work .swiper-slide #contact .contact_info{position: absolute; top:4%; left:0%; transform: translate(0, -420px);}
+    #work .swiper-slide #contact .contact_info{position: absolute; top:7%; left:0%; transform: translate(0, -270px);}
     #work .swiper-slide #contact .contact_info .box_wrap{margin-left:0px;}
     #work .swiper-slide #contact .contact_info .box {width:100%; margin-bottom:30px;}
     #work .swiper-slide #contact .contact_info .box .title{margin-bottom: 10px;}
